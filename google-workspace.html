@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Eurostile">
+    <link rel="stylesheet" href="css/build.css">
+    <title>Alura Skimo</title>
+</head>
+<body>
+    <!-- NAVBAR - START -->
+    <nav class="bg-gray-800 py-4" style="font-family: 'Montserrat', sans-serif;">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="/index.html" class="text-white font-bold text-2xl">Guilherme Lavezzo - Portfólio</a>
+          <ul class="flex">
+            <li><a href="/index.html" class="text-white hover:text-gray-200 px-4">Início</a></li>
+            <li><a href="/about.html" class="text-white hover:text-gray-200 px-4">Sobre</a></li>
+          </ul>
+        </div>
+    </nav>
+
+
+    <!-- BREADCRUMB - START -->
+    <nav class="flex p-10" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+        <li class="inline-flex items-center">
+            <a href="/index.html" class="inline-flex items-center text-sm font-medium text-gray-700 ">
+            <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+            Início
+            </a>
+        </li>
+        <li>
+            <div class="flex items-center">
+            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            <a class="ml-1 text-sm font-medium text-gray-700">Projetos</a>
+            </div>
+        </li>
+        <li aria-current="page">
+            <div class="flex items-center">
+            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Projeto de Automação de Contratos no Google Workspace</span>
+            </div>
+        </li>
+        </ol>
+    </nav>
+    <!-- BREADCRUMB - END -->
+
+    <div class="container my-24 px-6 mx-auto" style="font-family: 'Eurostile', sans-serif;">
+        <!-- Section: Design Block -->
+        <section class="mb-32 text-gray-800">
+            <h1 class="font-bold text-3xl mb-4">Integração Google Workspace - Projeto de Automação de Contratos no Google Workspace</h1>
+            <hr>
+            <h2 class="font-bold text-3xl mb-4 p-5">Introdução</h2>
+            <p class="mb-6">
+                Este projeto consiste em uma automação de processos utilizando o Google Workspace. O objetivo é criar um formulário Google para coletar dados, passar esses dados para uma planilha, e a partir dessa planilha, gerar um modelo de contrato no Google Docs utilizando um código Apps Script.
+            </p>
+            <h2 class="font-bold text-3xl mb-4 p-5">Funcionalidades</h2>
+            <ul class="list-disc list-inside mb-6">
+                <li>Criação de formulário Google para coletar dados dos clientes</li>
+                <li>Armazenamento dos dados coletados em uma planilha Google Sheets</li>
+                <li>Geração automática de um modelo de contrato no Google Docs</li>
+                <li>Personalização do modelo de contrato com os dados coletados no formulário</li>
+            </ul>
+
+            <h2 class="font-bold text-3xl mb-4 p-5">Como foi realizado o projeto</h2>
+            <h3 class="font-bold text-2xl mb-4 p-5">Passo 1: Criação do formulário</h3>
+                <ol class="list-decimal list-inside mb-6 pr-10">
+                    <li>Abra o Google Forms e crie um novo formulário</li>
+                    <li>Adicione os campos necessários para coletar os dados dos clientes</li>
+                    <li>No menu "Respostas", clique em "Planilha de Respostas" para criar uma nova planilha e armazenar os dados coletados</li>
+                </ol>
+            <h3 class="font-bold text-2xl mb-4 p-5">Passo 2: Configuração do código Apps Script</h3>
+                <ol class="list-decimal list-inside mb-6 pr-10">
+                    <li>Abra a planilha de respostas criada no passo anterior</li>
+                    <li>Clique em "Ferramentas" e selecione "Editor de Scripts" para abrir o editor de código Apps Script</li>
+                    <li>Cole o código fornecido no arquivo "appsscript.js" e salve as alterações</li>
+                </ol>
+            <h3 class="font-bold text-2xl mb-4 p-5">Passo 3: Criação do modelo de contrato</h3>
+                <ol class="list-decimal list-inside mb-6 pr-10">
+                    <li>Abra o Google Docs e crie um novo documento</li>
+                    <li>Adicione o texto do modelo de contrato e substitua as informações variáveis pelos marcadores "{{nome_do_campo}}"</li>
+                    <li>Salve o documento e copie o ID do documento (disponível na URL do documento)</li>
+                </ol>
+            <h3 class="font-bold text-2xl mb-4 p-5">Passo 4: Configuração do código Apps Script</h3>
+                <ol class="list-decimal list-inside mb-6 pr-10">
+                    <li>Passo 4: Configuração do código Apps Script</li>
+                    <li>Cole o código fornecido no arquivo "appsscript.js" e salve as alterações</li>
+                    <li>Substitua o valor da variável "TEMPLATE_ID" pelo ID do documento criado no passo anterior</li>
+                </ol>
+            <h3 class="font-bold text-2xl mb-4 p-5">Passo 5: Testando a automação</h3>
+                <ol class="list-decimal list-inside mb-6 pr-10">
+                    <li>Volte para o formulário criado no passo 1 e faça um teste preenchendo os campos com informações fictícias</li>
+                    <li>Verifique se os dados foram armazenados corretamente na planilha de respostas</li>
+                    <li>Verifique se um novo documento foi criado no Google Docs com as informações do modelo de contrato preenchidas automaticamente</li>
+                </ol>
+
+            <h2 class="font-bold text-3xl mb-4 p-5">Conclusão</h2>
+            <p class="mb-6">
+                Esse projeto de automação de contratos no Google Workspace permite que empresas coletem informações dos clientes de forma mais organizada e gerem contratos de forma mais rápida e eficiente. Além disso, o uso do Apps Script permite uma maior personalização e flexibilidade na geração dos contratos, tornando o processo ainda mais ágil e eficaz.
+            </p>
+
+
+            
+        </div>
+        <!-- Container for demo purpose -->
+    
+    </div>
+</body>

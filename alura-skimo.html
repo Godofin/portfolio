@@ -49,7 +49,7 @@
     </nav>
     <!-- BREADCRUMB - END -->
 
-    <div class="container my-24 px-6 mx-auto">
+    <div class="container my-24 px-6 mx-auto" style="font-family: 'Eurostile', sans-serif;">
   
         <!-- Section: Design Block -->
         <section class="mb-32 text-gray-800">
@@ -105,6 +105,46 @@
             O SSIS oferece muitos recursos e ferramentas para a realização de ETL, como conectores de dados pré-definidos, transformações personalizadas, gerenciamento de metadados e gerenciamento de erros. O objetivo final do processo ETL é garantir que os dados estejam prontos para análise e uso pelos usuários finais.
         </p>
 
+        <img src="https://github.com/Godofin/DataWarehouse-SorveteriaSkimo/raw/main/imgs/Modelagem%20SnowFlake.jpg" alt="">
+
+        <h2 class="font-bold text-3xl mb-4 p-5">Criação das tabelas no Banco de dados</h2>
+      
+        <p class="mb-6">
+          Se deu início ao processo de ELT, criando um novo projeto de banco de dados no Visual Studio e criando uma nova conexão com o banco de dados, que foi utilizado o SQL Server. E, seguindo foi realizado a criação das tabelas, seguindo o modelo de dados floco de neve, que foi criado no Figma. Com isso, houve a criação de 6 tabelas, sendo elas:
+        </p>
+        <ul class="list-disc list-inside mb-6">
+          <li>Dimensão Categoria(Dim_Categoria)</li>
+          <li>Dimensão Cliente(Dim_Cliente)</li>
+          <li>Dimensão Produto(Dim_Produto)</li>
+          <li>Dimensão Itens Pedido(Dim_ItensPedidos)</li>
+          <li>Dimensão Vendedores(Dim_Vendedor)</li>
+          <li>Fato Pedido(Fat0_Pedido)</li>
+        </ul>
+        
+        <h2 class="font-bold text-3xl mb-4 p-5">O processo de ETL com SSIS</h2>
+        
+        <p class="mb-6">
+          Para realizarmos a extração dos dados, foi utilizado o integration services. Houve a criação de um novo projeto dentro do schema do visual studio, onde usamos o ControlFlow para definirmos a ordem de execução dos nossos pacotes de dados, e também, usamos o DataFlow para definirmos a extração, transformação e carregamento dos dados.
+          <br>
+          Em Control Flow, foi criado 6 pacotes de dados, sendo eles: -Dim_Categoria -Dim_Cliente -Dim_Produto -Dim_ItensPedidos -Dim_Vendedor -Fato_Pedido
+          <br>
+          Dentro desses pacotes de dados ocorreu o processo de extração de dados, realizando a conexão com os arquivos em .CSV, realizando o mapping dos dados, e também, realizando a conexão com o banco de dados, para que os dados fossem carregados.
+          <br>
+          Abaixo, pode ser observado o processo de extração e transformação dos dados, de maneira genérica de como é o processo:
+        </p>
+
+        <img src="https://github.com/Godofin/DataWarehouse-SorveteriaSkimo/raw/main/imgs/ProcessorETL.jpg" alt="">
+        
+        <h2 class="font-bold text-3xl mb-4 p-5">Power BI</h2>
+
+        <p class="mb-6">
+          Com o processo de ETL realizado, foi possível realizar a criação de um dashboard no Power BI, para que pudéssemos visualizar os dados de maneira mais amigável.
+          <br>
+          Abaixo segue um print de como ficou a cara do dashboard.
+        </p>
+
+        <img src="https://raw.githubusercontent.com/Godofin/DataWarehouse-SorveteriaSkimo/main/imgs/Dash1-dados.png" alt="" class="p-10">
+        <img src="https://raw.githubusercontent.com/Godofin/DataWarehouse-SorveteriaSkimo/main/imgs/Dash2-dados.png" alt="" class="p-10">
       </div>
       <!-- Container for demo purpose -->
   
