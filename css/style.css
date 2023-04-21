@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-header {
+    background-image: url('https://razaoinadequada.com/wp-content/uploads/2023/04/c1b01766b0867247439c93d40e5c7c552fd26acf.jpg');
+    background-size: cover;
+    background-position: center;
+  }
