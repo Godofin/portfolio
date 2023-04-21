@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Eurostile">
+    <link rel="stylesheet" href="css/build.css">
+    <title>Alura Skimo</title>
+</head>
+<body>
+    <!-- NAVBAR - START -->
+    <nav class="bg-gray-800 py-4" style="font-family: 'Montserrat', sans-serif;">
+        <div class="container mx-auto flex justify-between items-center">
+          <a href="/index.html" class="text-white font-bold text-2xl">Guilherme Lavezzo - Portfólio</a>
+          <ul class="flex">
+            <li><a href="/index.html" class="text-white hover:text-gray-200 px-4">Início</a></li>
+            <li><a href="/about.html" class="text-white hover:text-gray-200 px-4">Sobre</a></li>
+          </ul>
+        </div>
+    </nav>
+    <!-- NAVBAR - END -->
+
+    <!-- BREADCRUMB - START -->
+    <nav class="flex p-10" aria-label="Breadcrumb">
+        <ol class="inline-flex items-center space-x-1 md:space-x-3">
+        <li class="inline-flex items-center">
+            <a href="/index.html" class="inline-flex items-center text-sm font-medium text-gray-700 ">
+            <svg aria-hidden="true" class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path></svg>
+            Início
+            </a>
+        </li>
+        <li>
+            <div class="flex items-center">
+            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            <a class="ml-1 text-sm font-medium text-gray-700">Projetos</a>
+            </div>
+        </li>
+        <li aria-current="page">
+            <div class="flex items-center">
+            <svg aria-hidden="true" class="w-6 h-6 text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+            <span class="ml-1 text-sm font-medium text-gray-500 md:ml-2 dark:text-gray-400">Alura Skimo</span>
+            </div>
+        </li>
+        </ol>
+    </nav>
+    <!-- BREADCRUMB - END -->
+
+    <div class="container my-24 px-6 mx-auto">
+  
+        <!-- Section: Design Block -->
+        <section class="mb-32 text-gray-800">
+          <h1 class="font-bold text-3xl mb-4">Sorveteria Skimo - Criação DataWareHouse</h1>
+          <hr>
+          <h2 class="font-bold text-3xl mb-4 p-5">Objetivos</h2>
+          <p class="mb-6">
+            O objetivo principal deste projeto é aplicar, de forma prática, os conhecimentos adquiridos durante os estudos de Business Intelligence. Mais especificamente, almejamos utilizar essas habilidades para coletar, processar e analisar dados relevantes para a tomada de decisões estratégicas em um determinado contexto empresarial. Para isso, planejamos utilizar ferramentas e técnicas de BI, como a criação de dashboards e relatórios personalizados, a fim de identificar tendências e padrões de comportamento que possam auxiliar na otimização de processos e no aumento da eficiência dos negócios.
+          </p>
+      
+          <h2 class="font-bold text-3xl mb-4 p-5">Ferramentas Utilizadas no projeto</h2>
+
+          <ul class="list-disc list-inside mb-6">
+            <li>Excel: Base dos dados;</li>
+            <li>Integration Services: Ferramenta de ETL(Extract Transform Load);</li>
+            <li>Power BI: Realização da análise dos dados;</li>
+            <li>Figma: Desing do Dashboard;</li>
+            <li>DbDiagram.io: Lugar para realização do diagrama do banco de dados;</li>
+          </ul>
+      
+          <h2 class="font-bold text-3xl mb-4 p-5">Fonte de dados</h2>
+            <ul class="list-disc list-inside mb-6">
+            <li>A fonte de dados utilizada para esse projeto, foi disponibilizada pela empresa Alura, que é uma escola de educação no rumo da tecnologia auxiliando com os conhecimentos.</li>
+            <li>A fonte de dados, foi disponibilizada em formato de arquivo .csv, que é um arquivo de texto, que contém dados separados por vírgulas, podendo ser aberto em qualquer editor de texto.</li>
+            <li>A fonte de dados, contém informações de vendas de uma sorveteria, que foi disponibilizada em 6 arquivos.</li>
+            <li><b>Vendas</b> - Registro de todas as transações comerciais realizadas pela empresa.</li>
+            <li><b>Produtos</b> - Catálogo de produtos oferecidos pela empresa.</li>
+            <li><b>Clientes</b> - Informações dos clientes cadastrados, incluindo dados pessoais e de contato.</li>
+            <li><b>Pedidos</b> - Registros de todos os pedidos realizados pelos clientes.</li>
+            <li><b>Itens Pedidos</b> - Detalhes dos produtos incluídos em cada pedido.</li>
+            <li><b>Categoria</b> - Classificação dos produtos em categorias específicas para facilitar a organização e análise dos dados.</li>
+
+        </ul>
+
+        <h2 class="font-bold text-3xl mb-4 p-5">Modelagem do Data Warehouse</h2>
+            
+      
+        <p class="mb-6">
+            Para iniciar o projeto, foi necessário fazer a modelagem do Data Warehouse, para isso, foi utilizado o Figma, que é uma ferramenta de prototipação de interface, que permite criar wireframes, protótipos de baixa e alta fidelidade, além de permitir a colaboração em tempo real. E também, bastante utilizada em times de scrum para realização de retrospectivas.
+            <br>
+            Dentro do figma, foi utilizado o modelo de dados floco de neve, que é um modelo de dados que permite a integração de dados de diferentes fontes, e também, permite a integração de dados de diferentes níveis de granularidade.
+        </p>
+
+        <h2 class="font-bold text-3xl mb-4 p-5">ETL - Extract Transform Load</h2>
+      
+        <p class="mb-6">
+            No Integration Services, ETL significa Extrair, Transformar e Carregar. Essa é uma abordagem comum para integração de dados, que envolve extrair dados de diversas fontes, aplicar transformações para limpar, combinar ou enriquecer os dados e, em seguida, carregar os dados resultantes em um destino, como um banco de dados ou um data warehouse.
+            <br>
+            O processo ETL é uma parte fundamental do SSIS (SQL Server Integration Services), que é uma plataforma de integração de dados desenvolvida pela Microsoft. No SSIS, o processo ETL é executado em pacotes, que são fluxos de trabalho que definem as etapas de extração, transformação e carregamento dos dados.
+            <br><br>
+            Na etapa de extração, os dados são lidos de várias fontes de dados, como arquivos, bancos de dados, aplicativos ou serviços web. Na etapa de transformação, os dados são limpos, validados, enriquecidos ou manipulados de outras maneiras, conforme necessário, para atender aos requisitos de negócios. Por fim, na etapa de carregamento, os dados são carregados em um destino, como um banco de dados ou um data warehouse.
+            <br>
+            O SSIS oferece muitos recursos e ferramentas para a realização de ETL, como conectores de dados pré-definidos, transformações personalizadas, gerenciamento de metadados e gerenciamento de erros. O objetivo final do processo ETL é garantir que os dados estejam prontos para análise e uso pelos usuários finais.
+        </p>
+
+      </div>
+      <!-- Container for demo purpose -->
+  
+
+</body>
